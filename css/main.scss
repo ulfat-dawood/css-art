@@ -23,3 +23,24 @@ body{
     justify-content: center;
     align-items:baseline;
 }
+
+//psudo selector
+.head::before{
+    content:"";
+    position: absolute;
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: inset -22px 5px 0 3px rgba(0,0,0,.2);//color is black with 20% opacity
+}
+
+.head::after{
+    content:"";
+    position: absolute;
+    width:15px;
+    height: 30px;
+    background: white;
+    margin-top: 300px;
+    border: 10px solid black; 
+
+}
