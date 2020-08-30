@@ -111,5 +111,41 @@ body {
   height: 100px;
   background: white;
   border-radius: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: -50px;
+}
+
+.mouth {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  border: 10px solid black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+  -webkit-clip-path: circle(60% at 50% 100%);
+          clip-path: circle(60% at 50% 100%);
+}
+
+.mouth::before, .mouth::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px solid black;
+  top: 102px;
+  left: -9px;
+  -webkit-clip-path: circle(50% at 0 0);
+          clip-path: circle(50% at 0 0);
+}
+
+.mouth::after {
+  left: 140px;
+  top: 107px;
+  -webkit-clip-path: circle(50% at 100% 0);
+          clip-path: circle(50% at 100% 0);
 }
 /*# sourceMappingURL=main.css.map */

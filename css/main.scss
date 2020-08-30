@@ -98,4 +98,35 @@ body{
     height: 100px;
     background: white;
     border-radius: 50%;
+    align-self: flex-end;
+    margin-bottom: -50px;
+}
+
+.mouth{
+    height: 180px;
+    width:180px;
+    position: absolute;
+    border: 10px solid black;
+    align-self: center;
+    border-radius: 50%;
+    clip-path: circle(60% at 50% 100%); 
+
+    &::before, &::after{
+        position: absolute;
+        content:"";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 10px solid black;
+        top:102px;
+        left:-9px;
+        clip-path: circle(50% at 0 0); 
+    }
+
+    &::after{
+        left:140px;
+        top:107px; 
+        clip-path: circle(50% at 100% 0); 
+
+    }
 }
