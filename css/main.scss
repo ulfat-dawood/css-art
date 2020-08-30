@@ -1,0 +1,25 @@
+body{
+    background: #5CA2C6;
+    height: 100vh;
+    display: grid;
+    place-items: center;//palce everything h & v centered
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.head{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid black; 
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
