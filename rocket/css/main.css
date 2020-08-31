@@ -39,12 +39,12 @@ body {
 .ball::after {
   border-radius: 50%;
   position: absolute;
-  border-right: 20px solid #436718;
-  top: -70px;
-  right: 95px;
+  border-right: 15px solid #54801e;
+  top: -60px;
+  right: 102px;
   content: "";
-  width: 17px;
-  height: 100px;
+  width: 15px;
+  height: 90px;
   background: #4b711b;
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
@@ -53,10 +53,10 @@ body {
 .stick {
   position: absolute;
   top: -40px;
-  left: 87px;
+  left: 107px;
   border-radius: 30%;
   height: 70px;
-  width: 70px;
+  width: 50px;
   border-right: 12px solid #4b711b;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 88%);
           clip-path: polygon(0 0, 100% 0, 100% 87%, 0 88%);
