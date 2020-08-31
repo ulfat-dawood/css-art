@@ -13,23 +13,141 @@ body{
 }
 
 .ball{
-    width:300px;
+    border-right: 1px solid rgb(193, 76, 23);
+    width:320px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 48%;
     background: rgb(226, 89, 25);
     position: relative;
     display: flex;
     justify-content: center;
     align-items:baseline;
-    box-shadow: inset -8px -8px 9px -5px rgb(119, 49, 16);
+    box-shadow: inset -8px -8px 70px -20px rgb(167, 60, 11),
+                inset 30px 30px 74px -26px rgb(255, 179, 143);
+    &::after{
+        border-radius: 50%;
+        position: absolute;
+        border-right:20px solid #436718 ;
+        top:-70px;
+        right:95px;
+        content: "";
+        width: 17px;
+        height: 100px;
+        background: #4b711b;
+        transform: rotate(50deg);
+    }
+    
 }
 
+.stick{
+    position: absolute;
+    top:-40px;
+    left:87px;
+    border-radius: 30%;
+    height: 70px;
+    width: 70px;
+    border-right:12px solid #4b711b ;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 88%);
+ 
+}
+
+
 .dot{
-    background: black;
-    width:30px;
-    height: 30px;
+    background: #4b711b;
+    width:40px;
+    height: 25px;
     border-radius: 70%;
     position: absolute;
     top:6px;
-    box-shadow: inset -8px -8px 9px -5px rgba(226,89,25,1);
+    transform: rotate(15deg);
+    box-shadow: inset -8px -8px 9px -5px #e6642a,
+                inset 8px 8px 9px -5px #ef855a ;
+    
+}
+
+.frakles{
+    position: absolute;
+    top:150px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    box-shadow: 
+    -20px -20px 0 0 #a24a213a,
+    -35px -30px 0 0 #a24a213a,
+    -90px -50px 0 0 #a24a213a,
+    -79px -30px 0 0 #a24a213a,
+    -90px -20px 0 0 #a24a213a,
+    -100px -110px 0 0 #a24a213a,
+
+    -20px -30px 0 0 #a24a213a,
+    -30px -40px 0 0 #a24a213a,
+    -40px -10px 0 0 #a24a213a,
+    -50px -90px 0 0 #a24a213a,
+    -10px -120px 0 0 #a24a213a,
+
+    -20px -40px 0 0 #a24a213a,
+    -75px -30px 0 0 #a24a213a,
+    -93px -70px 0 0 #a24a213a,
+    -85px -90px 0 0 #a24a213a,
+    -100px -120px 0 0 #a24a213a,
+
+    -70px 20px 0 0 #a24a213a,
+    -35px 30px 0 0 #a24a213a,
+    -20px 50px 0 0 #a24a213a,
+    -79px 30px 0 0 #a24a213a,
+    -90px 20px 0 0 #a24a213a,
+    -100px 110px 0 0 #a24a213a,
+
+    -60px 30px 0 0 #a24a213a,
+    -30px 40px 0 0 #a24a213a,
+    -90px 10px 0 0 #a24a213a,
+    -50px 90px 0 0 #a24a213a,
+    -70px 100px 0 0 #a24a213a,
+
+    -20px 40px 0 0 #a24a213a,
+    -75px 60px 0 0 #a24a213a,
+    -53px 90px 0 0 #a24a213a,
+    -45px 90px 0 0 #a24a213a,
+    -100px 100px 0 0 #a24a213a,
+
+    -70px 20px 0 0 #a24a213a,
+    -95px 30px 0 0 #a24a213a,
+    -120px 50px 0 0 #a24a213a,
+    -99px 30px 0 0 #a24a213a,
+    -1200px 20px 0 0 #a24a213a,
+    -90px 110px 0 0 #a24a213a,
+
+    -140px 30px 0 0 #a24a213a,
+    -135px 40px 0 0 #a24a213a,
+    -123px 10px 0 0 #a24a213a,
+    -100px 90px 0 0 #a24a213a,
+    -120px 100px 0 0 #a24a213a,
+
+    -120px -20px 0 0 #a24a213a,
+    -95px -30px 0 0 #a24a213a,
+    -90px -50px 0 0 #a24a213a,
+    -100px -30px 0 0 #a24a213a,
+    -100px -20px 0 0 #a24a213a,
+    -90px -110px 0 0 #a24a213a,
+
+    -140px -30px 0 0 #a24a213a,
+    -135px -40px 0 0 #a24a213a,
+    -123px -10px 0 0 #a24a213a,
+    -120px -90px 0 0 #a24a213a,
+    -120px -100px 0 0 #a24a213a,
+
+   
+  
+
+}
+
+.land{
+    position:absolute;
+    background: black;
+    z-index: -1;
+    height: 0px;
+    width: 200px;
+    bottom: -25px;
+    box-shadow:   -8px -8px 50px 25px rgba(157, 132, 105, 0.872);
+
 }
