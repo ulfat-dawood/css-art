@@ -2,7 +2,7 @@ body{
     background: rgba(249, 248, 248, 0.837);
     height: 100vh;
     display: grid;
-    place-items: center;//palce everything h & v centered
+    place-items: center;
 
 }
 
@@ -12,7 +12,7 @@ body{
     position: relative;
 }
 
-.ball{
+.orange{
     border-right: 1px solid rgb(193, 76, 23);
     width:320px;
     height: 300px;
@@ -65,7 +65,7 @@ body{
     
 }
 
-.frakles{
+.freckles  {
     position: absolute;
     top:150px;
     height: 5px;
@@ -143,11 +143,10 @@ body{
 
 .land{
     position:absolute;
-    background: black;
     z-index: -1;
     height: 0px;
     width: 200px;
-    bottom: -25px;
+    bottom: -18px;
     box-shadow:   -8px -8px 50px 25px rgba(157, 132, 105, 0.872);
 
 }
