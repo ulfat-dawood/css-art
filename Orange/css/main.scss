@@ -12,62 +12,65 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 
 .orange{
-    border-right: 1px solid rgb(193, 76, 23);
     width:320px;
     height: 300px;
-    border-radius: 48%;
     background: rgb(226, 89, 25);
     position: relative;
     display: flex;
     justify-content: center;
     align-items:baseline;
+    z-index:-2;
+    border-radius: 48%;
+    background: rgb(226, 89, 25);
+    border-right: 1px solid rgb(193, 76, 23);
     box-shadow: inset -8px -8px 70px -20px rgb(167, 60, 11),
                 inset 30px 30px 74px -26px rgb(255, 179, 143);
     &::after{
-        border-radius: 50%;
-        position: absolute;
-        border-right:15px solid #54801e ;
-        top:-60px;
-        right:104px;
         content: "";
+        position: absolute;
         width: 15px;
         height: 90px;
         background: #4b711b;
+        border-right:15px solid #54801e ;
+        top:-45px;
+        right:104px;
+        border-radius: 50%;
         transform: rotate(50deg);
+        z-index: -1;
+
+
     }
-    
-}
+} 
 
 .stick{
-    position: absolute;
-    top:-38px;
-    left:107px;
-    border-radius: 40%;
-    height: 70px;
+    height: 100px;
     width: 50px;
-    border-right:12px solid #4b711b ;
+    //background: white;
+    border-right:#4b711b 14px solid ;
+    position: absolute;
+    top:-50px;
+    left:107px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 88%);
- 
+    border-radius: 55%;
+
+
 }
 
 
 .dot{
-    background: #4b711b;
     width:40px;
     height: 25px;
-    border-radius: 70%;
+    background: repeating-radial-gradient(#4b711b  ,#4b711b32 15px,#e6642a00 );
     position: absolute;
-    top:6px;
-    transform: rotate(15deg);
-    box-shadow: inset -8px -8px 9px -5px #e6642a,
-                inset 8px 8px 9px -5px #ef855a ;
-    
+    top:18px;
+    border-radius: 70%;
 }
 
-.freckles  {
+.spots  {
     position: absolute;
     top:150px;
     height: 5px;
@@ -145,10 +148,11 @@ body{
 
 .land{
     position:absolute;
-    z-index: -1;
-    height: 0px;
-    width: 200px;
     bottom: -18px;
+    height:0px;
+    width: 200px;
+    background: black;
+    z-index: -10;
     box-shadow:   -8px -8px 50px 25px rgba(157, 132, 105, 0.872);
-
+   
 }
